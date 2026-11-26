@@ -1,0 +1,236 @@
+#nav{
+  border-bottom: 1px solid var(--btn-secondary-border);
+}
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  padding: var(--padding-xs);
+  background-color: var(--bg-page);
+}
+
+.name-nav{
+  width: 30%;
+  height: 95%;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-name{
+  width: 45px;
+  height: 45px;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--btn-primary-text);
+  background-color: var(--bg-accent);
+  font-size: var(--text-md);
+}
+.name h3{
+  font-size: var(--text-xl);
+}
+.name p{
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+.navegation{
+  width: 40%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navegation ul{
+  display: flex;
+  gap: 30px;
+  font-size: var(--text-sm);
+} 
+
+.navegation li{
+  list-style: none;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+.section-item:hover{
+  color: var(--bg-accent);
+}
+.active{
+  color: var(--bg-accent);
+  border-bottom: 2px solid var(--bg-accent);
+}
+
+.button-cv{
+  width: 15%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-curriculo{
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  padding: var(--padding-sm) var(--padding-lg);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn-curriculo:hover{
+  background-color: var(--btn-secondary-bg);
+  border: 2px solid var(--text-accent);
+  color: var(--text-accent);
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+#home{
+  background-color: var(--bg-section);
+}
+.home-contain{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.informations-home{
+  width: 55%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.informations-text{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.5;
+}
+.informations-text h1{
+  font-size: var(--text-title-sm);
+  font-family: var(--font-heading);
+}
+.informations-text p{
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+#dev{
+  color: var(--text-accent);
+}
+.information-button{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+
+}
+.projetos,
+.contato{
+  padding: var(--padding-sm-button) var(--padding-lg);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.projetos{
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+}
+
+.projetos:hover{
+  background-color: var(--btn-primary-hover-bg);
+  transition: 0.3s ease-in-out;
+}
+.contato{
+  border: 2px solid var(--btn-secondary-border);
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  font-weight: 510;
+}
+.contato:hover{
+  background-color: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
+  border: 2px solid var(--btn-secondary-hover-border);
+  transition: 0.3s ease-in-out;
+}
+/* Removemos o fundo e a altura fixa daqui para não criar um oval cinza */
+.image-home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container quadrado (mesma largura e altura) para garantir um círculo perfeito */
+.image-contain {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 1. Círculo grande cinza-claro perfeito ao fundo */
+.image-contain::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Ocupa 100% dos 500x500px */
+  background-color: #ededed;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* 2. Forma vermelha arredondada e inclinada */
+.image-contain::after {
+  content: "";
+  position: absolute;
+  top: 14%;
+  left: 12%;
+  width: 310px;
+  height: 310px;
+  background-color: var(--bg-accent, #e61a24); /* Usa a cor vermelha do seu tema */
+  border-radius: 65px 100px 65px 80px;
+  transform: rotate(-12deg);
+  z-index: 2;
+}
+
+/* 3. Wrapper circular da sua foto */
+.imagem {
+  position: relative;
+  width: 320px;
+  height: 320px; /* Altura igual à largura para manter o círculo perfeito */
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Dá profundidade sobre o vermelho */
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* Garante que sua cabeça não seja cortada */
+}
