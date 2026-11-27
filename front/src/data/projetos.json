@@ -1,0 +1,351 @@
+[
+  {
+    "id": 1,
+    "slug": "anaclara-nails",
+    "titulo": "Ana Clara Nail Design",
+    "subtitulo": "Sistema de Agendamento Online e Gestão de Horários",
+    "categoria": "Web",
+    "resumo": "Plataforma web de agendamento para nail designer com catálogo de modelos, reserva de horários sem colisão, pagamento do sinal de 50% via Mercado Pago e painel administrativo completo.",
+    "cliente": "Ana Clara",
+    "ano": "2026",
+    "duracao": "2 meses",
+    "papel": "UI/UX & Desenvolvimento Full Stack",
+    "status": "Em produção",
+    "plataforma": "Web Responsivo (Mobile-First)",
+    "metodologia": "Levantamento de Requisitos & Entregas Iterativas",
+    "tecnologias": [
+      "Python",
+      "FastAPI",
+      "React",
+      "TanStack Start",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Cloudflare R2",
+      "Mercado Pago",
+      "Docker",
+      "Nginx",
+      "Vercel"
+    ],
+    "problema": {
+      "descricao": "O agendamento manual via mensagens gerava conflitos de horário, perda de tempo no atendimento diário e dificuldade para organizar sinais de reserva e portfólio de procedimentos.",
+      "pontosDor": [
+        "Atendimento manual demorado via WhatsApp",
+        "Risco de choque de horários na agenda",
+        "Falta de confirmação financeira antecipada",
+        "Gestão descentralizada de serviços e preços"
+      ]
+    },
+    "solucao": {
+      "descricao": "Criei uma experiência mobile-first onde as clientes escolhem o modelo, o dia e o horário, pagam o sinal de 50% por Pix ou cartão e acompanham seus agendamentos, enquanto a administradora gerencia tudo em um painel próprio.",
+      "entregas": [
+        "Catálogo de modelos com fotos otimizadas e armazenadas no Cloudflare R2",
+        "Reserva com grade semanal, bloqueios de datas e regra de não colisão de horários",
+        "Pagamento do sinal via Mercado Pago (Checkout Bricks) com webhook validado por assinatura HMAC",
+        "Painel administrativo com agenda, catálogo, clientes, mensagens e equipe",
+        "Notificações Web Push, chat entre admin e cliente e recuperação de senha por e-mail",
+        "API com 243 testes automatizados e deploy em Vercel ou Docker"
+      ]
+    },
+    "links": {
+      "producao": "https://anaclara-nail-design.vercel.app",
+      "repositorio": "https://github.com/duartexwz/anaclara-nails",
+      "figma": ""
+    },
+    "destaque": true
+  },
+  {
+    "id": 2,
+    "slug": "sistema-agendamento-coffito",
+    "titulo": "Sistema de Reservas Institucionais — COFFITO",
+    "subtitulo": "Solicitação, Análise e Acompanhamento de Reservas de Espaços",
+    "categoria": "Web",
+    "resumo": "Aplicação para solicitação, aprovação e acompanhamento de reservas de espaços institucionais do COFFITO, com fluxo público para solicitantes externos, painel interno e agenda em calendário.",
+    "cliente": "COFFITO",
+    "ano": "2026",
+    "duracao": "3 meses",
+    "papel": "Desenvolvimento Full Stack",
+    "status": "Em homologação",
+    "plataforma": "Web Corporativo",
+    "metodologia": "Sprints Internas",
+    "tecnologias": [
+      "Python",
+      "FastAPI",
+      "React",
+      "JavaScript",
+      "Vite",
+      "Bootstrap",
+      "Axios",
+      "PostgreSQL",
+      "FullCalendar",
+      "Docker"
+    ],
+    "problema": {
+      "descricao": "A solicitação e a análise de reservas de espaços institucionais precisavam de um fluxo único, com perfis de acesso, histórico de decisões e visibilidade da agenda para a equipe operacional.",
+      "pontosDor": [
+        "Solicitações de profissionais externos sem canal estruturado",
+        "Dificuldade para visualizar a ocupação dos espaços",
+        "Falta de histórico e auditoria das decisões sobre reservas",
+        "Comunicação manual do resultado ao solicitante"
+      ]
+    },
+    "solucao": {
+      "descricao": "Desenvolvi um sistema web que separa o fluxo público (solicitação sem login) do fluxo interno (painel, agenda e administração), com API FastAPI, autenticação segura por cookies e ambiente Docker para homologação.",
+      "entregas": [
+        "Formulário público de solicitação de reserva para profissionais externos",
+        "Painel interno, agenda e administração de usuários, espaços e recursos",
+        "Calendário público sem sidebar, pensado para monitores da equipe de TI/operação",
+        "Aprovação, reprovação e pedido de ajuste com histórico e e-mail de notificação ao solicitante",
+        "Autenticação com JWT em cookies HttpOnly, refresh de sessão e proteção CSRF",
+        "Ambiente Docker Compose com frontend, API, PostgreSQL e Mailpit"
+      ]
+    },
+    "links": {
+      "producao": "",
+      "repositorio": "https://github.com/duartexwz/sistema-agendamento-coffito",
+      "figma": ""
+    },
+    "destaque": true
+  },
+  {
+    "id": 3,
+    "slug": "jpcroco-ecommerce",
+    "titulo": "JpCroco Store",
+    "subtitulo": "E-commerce Full Stack de Moda com Checkout, Frete e Rastreio",
+    "categoria": "Web",
+    "resumo": "Loja virtual completa de moda com variações de cor e tamanho, sacola por usuário, frete calculado por CEP, pagamento via Mercado Pago com Pix automático, rastreio e painel admin com notificações push.",
+    "cliente": "JpCroco",
+    "ano": "2026",
+    "duracao": "2 meses",
+    "papel": "UI/UX & Desenvolvimento Full Stack",
+    "status": "Em produção",
+    "plataforma": "Web Responsivo",
+    "metodologia": "Desenvolvimento Iterativo",
+    "tecnologias": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Vite",
+      "JavaScript",
+      "PostgreSQL",
+      "Mercado Pago",
+      "SuperFrete",
+      "Melhor Envio",
+      "Vercel",
+      "Docker"
+    ],
+    "problema": {
+      "descricao": "A marca precisava profissionalizar suas vendas online saindo do atendimento informal, exigindo controle preciso de estoque por variação, cálculo de envio para todo o Brasil e confirmação automática de pagamentos.",
+      "pontosDor": [
+        "Gestão manual de estoque por cor e tamanho",
+        "Cálculo manual de frete para cada cliente",
+        "Baixa escala nas vendas pelo atendimento direto",
+        "Necessidade de baixa automática após pagamento",
+        "Emissão de etiqueta e rastreio feitos fora do sistema"
+      ]
+    },
+    "solucao": {
+      "descricao": "Construí uma loja virtual responsiva com FastAPI e React, integrada ao Mercado Pago (Payment Brick com Pix), ao SuperFrete e Melhor Envio, com confirmação de pagamento por webhook e polling e um painel admin completo.",
+      "entregas": [
+        "Catálogo com variantes de cor × tamanho, galeria de imagens e sacola por usuário",
+        "Cálculo de frete por CEP com SuperFrete e fallback no Melhor Envio",
+        "Pagamento com Pix e QR Code, confirmação por webhook HMAC e baixa automática de estoque",
+        "Painel admin com gestão de produtos, pedidos, etiqueta de envio e rastreio",
+        "Notificações push no aparelho do admin a cada novo pedido",
+        "Área do cliente com histórico de compras e rastreio em tempo real"
+      ]
+    },
+    "links": {
+      "producao": "https://jpcroco.vercel.app",
+      "repositorio": "https://github.com/duartexwz/JpCroco",
+      "figma": ""
+    },
+    "destaque": true
+  },
+  {
+    "id": 4,
+    "slug": "confirmacao-presenca",
+    "titulo": "Confirmação de Presença — Jantar de Noivado",
+    "subtitulo": "Plataforma de RSVP com Área Administrativa",
+    "categoria": "Web",
+    "resumo": "Aplicação full stack para gerenciar as confirmações de presença de um evento, com formulário público de RSVP e área administrativa protegida por JWT.",
+    "cliente": "Projeto Pessoal / Eventos",
+    "ano": "2026",
+    "duracao": "1 mês",
+    "papel": "UI/UX & Desenvolvimento Full Stack",
+    "status": "Em produção",
+    "plataforma": "Web",
+    "metodologia": "Desenvolvimento Ágil",
+    "tecnologias": [
+      "Python",
+      "FastAPI",
+      "AsyncPG",
+      "PostgreSQL",
+      "React",
+      "Vite",
+      "JavaScript",
+      "Docker",
+      "Vercel"
+    ],
+    "problema": {
+      "descricao": "Organizar a lista de convidados de um evento presencial costuma gerar planilhas desatualizadas e mensagens dispersas, dificultando saber quem realmente vai comparecer.",
+      "pontosDor": [
+        "Dificuldade em consolidar confirmações de presença",
+        "Mensagens e planilhas espalhadas entre os organizadores",
+        "Falta de uma visão única e atualizada para os anfitriões"
+      ]
+    },
+    "solucao": {
+      "descricao": "Criei um convite digital conectado a uma API assíncrona em FastAPI e PostgreSQL que registra as confirmações em tempo real e oferece aos anfitriões um painel administrativo seguro.",
+      "entregas": [
+        "Formulário de confirmação de presença (RSVP)",
+        "Área administrativa com login JWT para visualizar confirmações e gerenciar administradores",
+        "Persistência assíncrona de alta performance com AsyncPG",
+        "Testes automatizados com pytest e deploy na Vercel ou via Docker"
+      ]
+    },
+    "links": {
+      "producao": "https://confirmepresenca.vercel.app",
+      "repositorio": "https://github.com/duartexwz/confirmacao-presenca",
+      "figma": ""
+    },
+    "destaque": true
+  },
+  {
+    "id": 5,
+    "slug": "portifolio-2-0",
+    "titulo": "Portfólio Profissional 2.0",
+    "subtitulo": "Plataforma Pessoal com Estudos de Caso e Animações",
+    "categoria": "UI/UX",
+    "resumo": "Site pessoal com seções de serviços, trajetória, tecnologias e portfólio interativo, com carrossel de imagens por projeto, animações de scroll e formulário de orçamento via WhatsApp.",
+    "cliente": "Mayckon Duarte",
+    "ano": "2026",
+    "duracao": "1 mês",
+    "papel": "UI/UX & Desenvolvimento Front-end",
+    "status": "Em produção",
+    "plataforma": "Web",
+    "metodologia": "Componentização em ES Modules",
+    "tecnologias": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "GSAP",
+      "particles.js",
+      "Docker",
+      "Nginx"
+    ],
+    "problema": {
+      "descricao": "Era necessário centralizar projetos full stack, habilidades técnicas e estudos de caso em uma interface moderna, rápida e fácil de atualizar.",
+      "pontosDor": [
+        "Falta de vitrine estruturada para estudos de caso",
+        "Necessidade de identidade visual marcante e responsiva",
+        "Dificuldade para captar pedidos de orçamento de forma direta"
+      ]
+    },
+    "solucao": {
+      "descricao": "Projetei e desenvolvi um portfólio estático em HTML, CSS e JavaScript modular, com tema escuro monocromático, dados dos projetos centralizados em um único arquivo e entrega via Nginx em Docker.",
+      "entregas": [
+        "Cards de projetos com carrossel, badges de tecnologias e detalhes expansíveis (problema, solução, abordagem e resultado)",
+        "Animações de scroll com GSAP e ScrollTrigger, partículas de fundo e barras de proficiência animadas",
+        "Formulário de orçamento com envio da mensagem via WhatsApp",
+        "Layout responsivo para desktop, tablet e mobile",
+        "Containerização com Docker e Nginx"
+      ]
+    },
+    "links": {
+      "producao": "https://mayckondev.vercel.app",
+      "repositorio": "https://github.com/duartexwz/portifolio-2.0",
+      "figma": ""
+    },
+    "destaque": false
+  },
+  {
+    "id": 6,
+    "slug": "agendamento-fisioterapia-coffito",
+    "titulo": "Agendamento Saúde Ocupacional — COFFITO",
+    "subtitulo": "Agendamento de Sessões com API Node.js e Persistência Serverless",
+    "categoria": "Web",
+    "resumo": "Sistema de agendamento de sessões de fisioterapia e terapia ocupacional com front-end em JavaScript puro, calendário interativo, controle de vagas e API Node.js preparada para Docker e Vercel.",
+    "cliente": "COFFITO / Demo",
+    "ano": "2026",
+    "duracao": "1 mês",
+    "papel": "Desenvolvimento Full Stack & Deploy",
+    "status": "Em produção",
+    "plataforma": "Web / Serverless",
+    "metodologia": "Adaptação Cloud",
+    "tecnologias": [
+      "Node.js",
+      "Express",
+      "JavaScript",
+      "HTML & CSS",
+      "FullCalendar",
+      "Jest",
+      "Docker",
+      "Vercel"
+    ],
+    "problema": {
+      "descricao": "O agendamento de sessões exigia controle de vagas por evento e uma versão leve do sistema para demonstrações, sem depender de infraestrutura corporativa ou de etapas de build no front-end.",
+      "pontosDor": [
+        "Controle manual de vagas por sessão",
+        "Dependência de servidor interno para demonstrações",
+        "Persistência em arquivo incompatível com o ambiente serverless"
+      ]
+    },
+    "solucao": {
+      "descricao": "Desenvolvi uma API Express com persistência em JSON (local e Docker) que passa a usar Redis via Vercel KV em produção, e um front-end em HTML, CSS e JavaScript puro com página pública e painel administrativo.",
+      "entregas": [
+        "Calendário com FullCalendar e página pública de agendamento",
+        "Controle automático de vagas: decrementa ao confirmar, devolve ao remover e marca sessões como Lotado",
+        "Painel administrativo com login para gerir profissionais, sessões e participantes",
+        "API REST v1 com testes automatizados (Jest e Supertest)",
+        "Persistência em volume Docker e em Vercel KV (Redis) para produção serverless"
+      ]
+    },
+    "links": {
+      "producao": "",
+      "repositorio": "https://github.com/duartexwz/agendamento-fisioterapia-coffito",
+      "figma": ""
+    },
+    "destaque": false
+  },
+  {
+    "id": 7,
+    "slug": "landing-page",
+    "titulo": "Landing Page de Alta Conversão",
+    "subtitulo": "Página Institucional Responsiva e Otimizada",
+    "categoria": "Web",
+    "resumo": "Landing page moderna focada em apresentação de serviços, performance de carregamento e captura de contatos.",
+    "cliente": "Projeto Comercial",
+    "ano": "2026",
+    "duracao": "2 semanas",
+    "papel": "UI/UX & Front-end",
+    "status": "Concluído",
+    "plataforma": "Web",
+    "metodologia": "Mobile-First",
+    "tecnologias": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "problema": {
+      "descricao": "Negócios locais e prestadores de serviço precisam de presença digital rápida e objetiva para converter visitantes em leads sem distrações.",
+      "pontosDor": [
+        "Baixa taxa de conversão em páginas genéricas",
+        "Lentidão em conexões móveis"
+      ]
+    },
+    "solucao": {
+      "descricao": "Desenvolvi uma interface leve em HTML, CSS e JavaScript puro com hierarquia visual clara, chamadas para ação estratégicas e carregamento instantâneo.",
+      "entregas": [
+        "Layout responsivo adaptado para mobile e desktop",
+        "Código semântico otimizado para SEO e velocidade"
+      ]
+    },
+    "links": {
+      "producao": "",
+      "repositorio": "https://github.com/duartexwz/landing-page",
+      "figma": ""
+    },
+    "destaque": false
+  }
+]

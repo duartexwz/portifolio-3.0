@@ -5,7 +5,7 @@
   --color-primary-soft:  #FDECEE;
   --color-ink:           #12141A;
   --color-gray:          #6B7078;
-  --color-muted:         #9AA0AA;
+  --color-muted:         #cfcfcf;
   --color-bg:            #F5F5F7;
   --color-surface:       #FFFFFF;
   --color-surface-dark:  #1A1D24;
@@ -22,7 +22,7 @@
   --bg-dark:          var(--color-dark);          
   --bg-dark-surface:  var(--color-surface-dark);  
   --bg-input:         var(--color-bg);
-
+  --bg-darl:          var(--color-ink);
   /* ===== TEXTO ===== */
   --text-primary:   var(--color-ink);
   --text-secondary: var(--color-gray);
@@ -85,6 +85,7 @@
   --text-lg:  1.125rem;  
   --text-xl:  1.5rem;    
   --text-title-sm: 2.25rem;   
+  --text-title-md: 2.4rem;
   --text-title-lg: 4rem;
 }
 
@@ -110,4 +111,11 @@ section{
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+}
+
+#page{
+  overflow-y: auto;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }

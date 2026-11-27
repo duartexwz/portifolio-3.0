@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "sigla": "Py",
+    "nome": "Python",
+    "categoria": "Back-end",
+    "porcentagem": 95
+  },
+  {
+    "id": 2,
+    "sigla": "FA",
+    "nome": "FastAPI",
+    "categoria": "Back-end",
+    "porcentagem": 92
+  },
+  {
+    "id": 3,
+    "sigla": "JS",
+    "nome": "JavaScript",
+    "categoria": "Front-end",
+    "porcentagem": 90
+  },
+  {
+    "id": 4,
+    "sigla": "Re",
+    "nome": "React",
+    "categoria": "Front-end",
+    "porcentagem": 85
+  },
+  {
+    "id": 5,
+    "sigla": "TS",
+    "nome": "TypeScript",
+    "categoria": "Front-end",
+    "porcentagem": 80
+  },
+  {
+    "id": 6,
+    "sigla": "HC",
+    "nome": "HTML & CSS",
+    "categoria": "Front-end",
+    "porcentagem": 95
+  },
+  {
+    "id": 7,
+    "sigla": "No",
+    "nome": "Node.js",
+    "categoria": "Back-end",
+    "porcentagem": 80
+  },
+  {
+    "id": 8,
+    "sigla": "PG",
+    "nome": "PostgreSQL",
+    "categoria": "Banco de Dados",
+    "porcentagem": 88
+  },
+  {
+    "id": 9,
+    "sigla": "SA",
+    "nome": "SQLAlchemy",
+    "categoria": "Back-end",
+    "porcentagem": 85
+  },
+  {
+    "id": 10,
+    "sigla": "Dk",
+    "nome": "Docker",
+    "categoria": "DevOps & Infra",
+    "porcentagem": 85
+  },
+  {
+    "id": 11,
+    "sigla": "AW",
+    "nome": "AWS",
+    "categoria": "Cloud & Deploy",
+    "porcentagem": 75
+  },
+  {
+    "id": 12,
+    "sigla": "Lx",
+    "nome": "Linux",
+    "categoria": "DevOps & Infra",
+    "porcentagem": 90
+  }
+]
